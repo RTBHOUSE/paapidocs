@@ -10,14 +10,15 @@ There are a few key coordination areas that need to be addressed in order to suc
 
 
 
-- [Bid Request flow](#bookmark=id.30j0zll)
-  - OpenRTB protocol
-- [Creative audit](#bookmark=id.26in1rg)
-  - DSP’s renderURL methodology
-- PA on-device bidding data
-- PA on-device scoring data
-- PA win reporting
-- Post-auction reporting
+- [Bid Request flow](#bid-request-flow)
+  - [Early experimentation](#early-experiment---early-adopters)
+  - [OpenRTB protocol proposal](#proposed-standard-path)
+- [Creative audit](#creative-audit)
+  - [DSP’s renderURL methodology](#rtb-house-example-renderurls)
+- [PA on-device bidding data](#pa-on-device-bidding-data-ssp---dsp)
+- [PA on-device scoring data](#pa-on-device-scoring-data-dsp---ssp)
+- [PA win reporting](#pa-api-win-reporting)
+- [Post-auction reporting](#post-auction-reporting)
 
 By working together, DSPs and SSPs can ensure that the Protected Audience API is implemented in a way that benefits both parties. 
 
@@ -28,8 +29,8 @@ The document describes two ways of request-response flow:
 
 
 
-1. [Early experiment - early adopters](#early_experimentation)
-2. [Proposed standard path](#proposed_standard)
+1. [Early experiment - early adopters](#early-experiment---early-adopters)
+2. [Proposed standard path](#proposed-standard-path)
 
 For the time being both are supported. With the expected near emergence of a standard - the latter is preferred.
 
@@ -267,12 +268,6 @@ During the scoring process in the `scoreAd()` function, SSPs have access to the 
 3. `https://f.creativecdn.com/creatives?id=0xlS2c1rA3uWiiYL4nhc&c=2Rf830zQiV8UCzdKcDfb&s=rtbhfledge`
 4. `https://f.creativecdn.com/creatives?id=1011nfKZY8gUXqcfjdNR&c=dEU0qtF76ATzIppLqNl7&s=rtbhfledge`
 5. `https://f.creativecdn.com/creatives?id=d0GSOS1ZgpuI3Ctuf7Ho&c=QxFpeqaC9sJ3YXix43FB&s=rtbhfledge`
-6. `https://f.creativecdn.com/creatives?id=9OKHZK3Ko3SJkJtkBsXf&c=5nkcMRYxwtQe0XptyPDT&s=rtbhfledge`
-7. `https://f.creativecdn.com/creatives?id=oO80oe8WOQkNV2C5esL0&c=MKjZZTKjbWJzSQa7eEex&s=rtbhfledge`
-8. `https://f.creativecdn.com/creatives?id=0FO6RIkmNqvhWaxAF30T&c=9op00fUkmjYo84cQ6L79&s=rtbhfledge`
-9. `https://f.creativecdn.com/creatives?id=0rBA3uTRpAiCZkOOYBsw&c=Ulozo5aydJ5XdPSM6uSM&s=rtbhfledge`
-10. `https://f.creativecdn.com/creatives?id=kCiAxZ6z7POkt9SJFa5m&c=qZwBsgCClaY6487ZLxtH&s=rtbhfledge`
-11. `https://f.creativecdn.com/creatives?id=0XmNu0i5BWKZHbeRVnU6&c=G5RK3x5316Ll9xb04EQQ&s=rtbhfledge`
 
 
 ## PA on-device bidding data: SSP -> DSP
@@ -282,7 +277,7 @@ RTB House currently does not have expectations to receive specific, nonstandard 
 
 ## PA on-device scoring data: DSP -> SSP
 
-RTB House currently prefers unified, single currency - USD. We plan on following emerging standard, where the contextual response will inform both the Seller and Buyer’s bidding function of the currency - see [Bid Response sample](#bookmark=id.2s8eyo1)
+RTB House currently prefers unified, single currency - USD. We plan on following emerging standard, where the contextual response will inform both the Seller and Buyer’s bidding function of the currency - see [Bid Response sample](#bid-response-1)
 
 
 ## PA API win reporting
