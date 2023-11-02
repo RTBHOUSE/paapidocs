@@ -324,11 +324,11 @@ Seller needs to register the event in it’s reportResult() function:
 ```
 // reportResult()
 registerAdBeacon({
-"reserved.top_navigation": "seller_endpoint?with_some_params"
+    "reserved.top_navigation": "seller_endpoint?with_some_params"
 }, {
-"reserved.top_navigation_start": "seller_endpoint?with_some_params"
+    "reserved.top_navigation_start": "seller_endpoint?with_some_params"
 }, {
-"reserved.top_navigation_commit": "seller_endpoint?with_some_params"
+    "reserved.top_navigation_commit": "seller_endpoint?with_some_params"
 })
 ```
 
@@ -359,7 +359,7 @@ Seller needs to also register the same event’s name in reportResult() code in 
 ```
 // reportResult()
 registerAdBeacon({
-"render": "seller_endpoint?with_some_params"
+    "render": "seller_endpoint?with_some_params"
 })
 ```
 
