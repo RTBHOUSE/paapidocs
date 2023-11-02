@@ -206,7 +206,7 @@ OpenRTB BidResponse = {
 
 	// array of buyer-level information to use in the interest group auction.
 	"b": [{   	 
-        // Optional
+        	// Required
         	// Origin of the interest group buyer to participate in the
         	// in-browser auction.
         	// See https://developer.mozilla.org/en-US/docs/Glossary/Origin
