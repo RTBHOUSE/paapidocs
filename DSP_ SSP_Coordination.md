@@ -222,7 +222,7 @@ OpenRTB BidResponse = {
         	// `perBuyerSignals` attribute map, keyed by the interest group buyer
               // origin.
         	// Value may be any valid JSON serializable value.
-        	"bs" = ...,
+        	"pbs" = ...,
 
         	// Optional
         	// Buyer priority signals.
