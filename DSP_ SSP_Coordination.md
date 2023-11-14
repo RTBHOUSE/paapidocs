@@ -165,7 +165,7 @@ OpenRTB Core BidRequest.imp = {
    // has not onboarded this buyer for IG auctions. This value should not be filled out by the publisher.
    // DEFAULT=true
 
-   "bid": true,
+   "biddable": true,
    "ext": {...}  
    }
 }
@@ -197,7 +197,7 @@ OpenRTB BidResponse = {
    // one or more InterestGroupAuction.Response objects
    // Provided if the buyer is signaling participation in potential interest group auction(s)
    // Defined in Interest Group Auctions specification, see section #.## 
-   "igb": [ 
+   "igi": [ 
    {
        // ID of ad slot represented by the corresponding Imp object in the bid
 	// request to link information to be used in the interest group auction to
@@ -205,12 +205,12 @@ OpenRTB BidResponse = {
 	"impid": "1",
 
 	// array of buyer-level information to use in the interest group auction.
-	"b": [{   	 
+	"igb": [{   	 
         	// Required
         	// Origin of the interest group buyer to participate in the
         	// in-browser auction.
         	// See https://developer.mozilla.org/en-US/docs/Glossary/Origin
-        	"o": "https://ads.dsp.com",
+        	"origin": "https://ads.dsp.com",
         	// Indicates the currency in which interest group bids will be placed.
         	// Value must be a three digit ISO 4217 alpha currency code (e.g. "USD").
         	"cur": "USD",
@@ -228,8 +228,8 @@ OpenRTB BidResponse = {
         	// Buyer priority signals.
         	// If specified, seller will add to its auction config
         	// `perBuyerPrioritySignals` attribute map, keyed by the interest group buyer origin.
-        	"ps": {...}
-
+        	"ps": {...},
+            "ext": {...}  
   	}]
 }]
 }
