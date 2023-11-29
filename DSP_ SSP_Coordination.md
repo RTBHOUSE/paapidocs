@@ -279,6 +279,24 @@ RTB House currently does not have expectations to receive specific, nonstandard 
 
 RTB House currently prefers unified, single currency - USD. We plan on following emerging standard, where the contextual response will inform both the Seller and Buyer’s bidding function of the currency - see [Bid Response sample](#bid-response-1)
 
+As a result of a bidding function RTB House also returns an ad object with informations specific to the returned bid, ex:
+```
+{
+    "bid": 1,
+    "render": "https://f.creativecdn.com/creatives?id=BcZKHkT4MAlkP8W1GbNn&c=kQKZEgHd2MX0GUG9VHAS&s=rtbhfledge",
+    "ad": {
+        "adomain": ["example.com"],
+        "cid": "kQKZEgHd2MX0GUG9VHAS",
+        "crid": "BcZKHkT4MAlkP8W1GbNn_kQKZEgHd2MX0GUG9VHAS",
+        "w": 300,
+        "h": 250
+    },
+    "adComponents": ["https://f.creativecdn.com/creatives?id=OdjHedJd8uDClBSou5rp&c=kQKZEgHd2MX0GUG9VHAS&_oi=2258342499549171292&s=rtbhfledge",  ...],
+    "bidCurrency": "USD",
+    (...)
+}
+```
+
 
 ## PA API win reporting
 
