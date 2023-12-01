@@ -279,7 +279,7 @@ RTB House currently does not have expectations to receive specific, nonstandard 
 
 RTB House currently prefers unified, single currency - USD. We plan on following emerging standard, where the contextual response will inform both the Seller and Buyer’s bidding function of the currency - see [Bid Response sample](#bid-response-1)
 
-As a result of a bidding function RTB House also returns an ad object with informations specific to the returned bid, ex:
+As a result of a bidding function RTB House also returns an ad object with informations specific to the returned bid, eg:
 ```
 {
     "bid": 1,
