@@ -173,6 +173,9 @@ OpenRTB Core BidRequest.imp = {
 ```
 
 Optionally we support also "ae" and "biddable" fields given in alternative sections of imp object. Like in imp -> ext -> igs
+With is currently standard from  [official IAB specification](https://github.com/InteractiveAdvertisingBureau/openrtb/blob/main/extensions/community_extensions/Protected%20Audience%20Support.md).
+
+
 Example below:
 
 ```
@@ -187,7 +190,9 @@ OpenRTB Core BidRequest.imp = {
 }
 ```
 
-Another supported version of sending "ae" feature is creating "ae" field directly in imp -> ext
+Another supported version of sending "ae" feature is creating "ae" field directly in imp -> ext.
+
+
 Example below:
 
 ```
