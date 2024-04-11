@@ -163,6 +163,7 @@ OpenRTB Core BidRequest.imp = {
    // group auction may ultimately decide the winning ad.
    // The seller sets this. Example, the publisher intends to enable IG, but the seller (SSP)
    // has not onboarded this buyer for IG auctions. This value should not be filled out by the publisher.
+   // Default value of this field is boolean given in text form, but numeric boolean values (0, 1) are also supported.
    // DEFAULT=true
 
    "biddable": true,
@@ -171,11 +172,43 @@ OpenRTB Core BidRequest.imp = {
 }
 ```
 
+Optionally we support also "ae" and "biddable" fields given in alternative sections of imp object. Like in imp -> ext -> igs
+With is currently standard from  [official IAB specification](https://github.com/InteractiveAdvertisingBureau/openrtb/blob/main/extensions/community_extensions/Protected%20Audience%20Support.md).
 
+
+Example below:
+
+```
+OpenRTB Core BidRequest.imp = {
+	...
+	"ext": {
+		"igs": {
+			"ae": 1,
+			"biddable": true
+		}
+	}  
+}
+```
+
+Another supported version of sending "ae" feature is creating "ae" field directly in imp -> ext.
+
+
+Example below:
+
+```
+OpenRTB Core BidRequest.imp = {
+	...
+	"ext": {
+		...
+		"ae": 1,
+		...
+	}  
+}
+```
 
 #### Bid Response
 
-**Please note, the standard is taking shape. Fields could change names over time if consensus is reached. **
+**Please note, the standard is taking shape. Fields could change names over time if consensus is reached.**
 
 Bidders will respond to a PA API-eligible impression with:
 
