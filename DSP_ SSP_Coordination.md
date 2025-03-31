@@ -70,7 +70,7 @@ The field conveys three possible values:
 * 3: PA API is available in Trusted Execution Environment (TEE)
 
 
-Even dough PA API is avaliable is not guaranteed to execute, pending the buyer’s participation and final decision by the publisher.
+Even though PA API is avaliable is not guaranteed to execute, pending the buyer’s participation and final decision by the publisher.
 
 In the future it is expected to grow, also including signaling for Bidding & Auction Services which is not yet widely available & supported.
 
