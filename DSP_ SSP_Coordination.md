@@ -61,12 +61,16 @@ SSP is expected to send a bid request with a “ae” feature signaling PA API a
 ```
 
 
-The field conveys two values:
+The field conveys three possible values:
 
 
 
 * 0 or no value - **PA API is not available**
-* 1: PA API is available - yet is not guaranteed to execute, pending the buyer’s participation and final decision by the publisher
+* 1: PA API is available in On Device environment
+* 3: PA API is available in Trusted Execution Environment (TEE)
+
+
+Even though PA API is avaliable is not guaranteed to execute, pending the buyer’s participation and final decision by the publisher.
 
 In the future it is expected to grow, also including signaling for Bidding & Auction Services which is not yet widely available & supported.
 
