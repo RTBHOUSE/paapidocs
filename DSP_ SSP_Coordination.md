@@ -72,9 +72,6 @@ The field conveys three possible values:
 
 Even though PA API is avaliable is not guaranteed to execute, pending the buyer’s participation and final decision by the publisher.
 
-In the future it is expected to grow, also including signaling for Bidding & Auction Services which is not yet widely available & supported.
-
-
 #### Bid Response
 
 Bidders will respond to a PA API-eligible impression with:
